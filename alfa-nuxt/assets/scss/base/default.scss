@@ -1,0 +1,40 @@
+.container
+{
+	max-width: $widescreen;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+// body{ min-width: 509px; }
+
+.cards-transiotion-enter-active, .cards-transiotion-leave-active
+{
+	transition: all 1s;
+}
+.cards-transiotion-enter, .cards-transiotion-leave-to
+{
+	opacity: 0;
+	transform: translateY(30px);
+}
+.mobile-view{display: block;}
+.desktop-view{display: none;}
+.last-element
+{
+	background: white;
+	border-radius:30px;
+	margin-bottom: -30px;
+	position: relative;
+	z-index: 2;
+}
+.bg-gray
+{
+	path
+	{
+		fill:#D8D0D9;
+	}
+}
+@media (min-width: 1024px)
+{
+	.mobile-view{display: none;}
+	.desktop-view{display: block;}
+}
